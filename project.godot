@@ -15,7 +15,8 @@ config/description="Escape from Nebula Prime is an action-packed, side-scrolling
 
 Perfect for fans of sci-fi and adrenaline-fueled challenges, Escape from Nebula Prime delivers endless fun with vibrant visuals, pulse-pounding music, and dynamic gameplay."
 config/version="1.0"
-config/features=PackedStringArray("4.3", "GL Compatibility")
+run/main_scene="res://scenes/main.tscn"
+config/features=PackedStringArray("4.3", "C#", "GL Compatibility")
 boot_splash/image="res://boot_splash.png"
 config/icon="res://icon.webp"
 
