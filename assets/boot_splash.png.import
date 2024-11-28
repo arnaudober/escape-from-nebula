@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://7x01o5mobwte"
-path="res://.godot/imported/icon.webp-e94f9a68b0f625a567a797079e4d325f.ctex"
+uid="uid://deh4hvgmhle7a"
+path="res://.godot/imported/boot_splash.png-58752582489c18025e901e53092cacd4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://icon.webp"
-dest_files=["res://.godot/imported/icon.webp-e94f9a68b0f625a567a797079e4d325f.ctex"]
+source_file="res://assets/boot_splash.png"
+dest_files=["res://.godot/imported/boot_splash.png-58752582489c18025e901e53092cacd4.ctex"]
 
 [params]
 
