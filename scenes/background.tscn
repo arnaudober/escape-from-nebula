@@ -1,6 +1,5 @@
-[gd_scene load_steps=8 format=3 uid="uid://b01incid4lk1b"]
+[gd_scene load_steps=7 format=3 uid="uid://b01incid4lk1b"]
 
-[ext_resource type="Script" path="res://scripts/StarsBackground.cs" id="1_r6ju3"]
 [ext_resource type="Texture2D" uid="uid://d4a635rgpj2vr" path="res://assets/star_texture.png" id="2_sygkk"]
 
 [sub_resource type="Curve" id="Curve_etefy"]
@@ -35,7 +34,6 @@ alpha_curve = SubResource("CurveTexture_jyc5s")
 [node name="Background" type="Node2D"]
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
-script = ExtResource("1_r6ju3")
 
 [node name="StarLayer" type="ParallaxLayer" parent="ParallaxBackground"]
 
