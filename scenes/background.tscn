@@ -1,5 +1,48 @@
-[gd_scene format=3 uid="uid://b01incid4lk1b"]
+[gd_scene load_steps=8 format=3 uid="uid://b01incid4lk1b"]
+
+[ext_resource type="Script" path="res://scripts/StarsBackground.cs" id="1_r6ju3"]
+[ext_resource type="Texture2D" uid="uid://d4a635rgpj2vr" path="res://assets/star_texture.png" id="2_sygkk"]
+
+[sub_resource type="Curve" id="Curve_etefy"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_jyc5s"]
+curve = SubResource("Curve_etefy")
+
+[sub_resource type="Gradient" id="Gradient_exfto"]
+offsets = PackedFloat32Array(0, 0.514085, 1)
+colors = PackedColorArray(1, 1, 1, 1, 0.658824, 0.87451, 1, 1, 1, 0.972549, 0.878431, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_fnwja"]
+gradient = SubResource("Gradient_exfto")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_fwu8l"]
+particle_flag_disable_z = true
+emission_shape = 3
+emission_box_extents = Vector3(1980, 1280, 1)
+initial_velocity_min = 10.0
+initial_velocity_max = 30.0
+angular_velocity_min = -5.00002
+angular_velocity_max = 4.99998
+gravity = Vector3(0, 0, 0)
+scale_min = 0.05
+scale_max = 0.2
+color = Color(0.658824, 0.87451, 1, 1)
+color_ramp = SubResource("GradientTexture1D_fnwja")
+alpha_curve = SubResource("CurveTexture_jyc5s")
 
 [node name="Background" type="Node2D"]
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+script = ExtResource("1_r6ju3")
+
+[node name="StarLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="ParallaxBackground/StarLayer"]
+position = Vector2(640, 360)
+amount = 800
+process_material = SubResource("ParticleProcessMaterial_fwu8l")
+texture = ExtResource("2_sygkk")
+lifetime = 20.0
+preprocess = 20.0
