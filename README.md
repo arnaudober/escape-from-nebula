@@ -1,72 +1,54 @@
-# **Space Odyssey: Particle Star Background**
+# **Escape From Nebula Prime**
 
-**Space Odyssey** is a simple 2D space simulation game built with **Godot Engine** (v4.3) using **.NET** and **C#**. The game features a dynamic star background, which is generated using particle systems for a realistic and immersive space environment.
+**Escape From Nebula Prime** is a 2D space shooter game where you control a ship that can move in all directions and shoot to defeat enemy ships. As you progress through levels, the difficulty increases with more enemies, faster ships, and new obstacles.
 
-## **Game Description**
-In **Space Odyssey**, players explore space in a procedurally generated universe. The game features:
-- A dynamic **starry sky** background made using **CPUParticles2D** with randomized star sizes and velocities.
-- A **parallax scrolling** background to create the illusion of depth in space.
-- **Asteroids**, **enemy ships**, and other space phenomena that players can interact with.
+<img src="https://raw.githubusercontent.com/arnaudober/escape-from-nebula-prime/refs/heads/develop/assets/boot_splash.png" alt="Game Logo" width="400"/>
+
+## **Game Concept**
+- **Player Ship:** Move up, down, left, or right within constraints. Shoot to destroy enemy ships.
+- **Enemies:** Enemy ships appear on the opposite side of the screen and shoot toward the player.
+- **Asteroids:** Floating obstacles that add difficulty to navigation.
+- **Escape Portal:** At the end of each level, an escape portal appears. The player must reach it to progress to the next level.
+- **Levels:** Each level increases in difficulty. More enemies, faster ships, new boosters, and stronger enemies await.
+- **HUD:** Displays the player's score, current level, and available boosters.
+
+## **Gameplay Features**
+- Simple ship movement and shooting mechanics.
+- Dynamic space environment including stars and asteroids.
+- Increasing difficulty with each level: more enemies, faster ships, and additional obstacles.
+- Collect boosters and reach the escape portal to advance to the next level.
 
 ## **Technologies**
-- **Godot Engine (v4.3)** – A powerful open-source game engine.
-- **.NET** – Used for scripting with **C#**.
-- **GitHub** – For version control and collaboration.
-
-## **Installation Instructions**
-
-To get started with the project, follow these steps:
-
-1. Clone the repository:
-
-   ```git clone https://github.com/arnaudober/escape-from-nebula-prime.git```
-
-2. Install Godot Engine:
-   - Download and install **Godot 4.3** from [the official website](https://godotengine.org/download).
-   
-3. Open the project:
-   - Open **Godot** and click on **Open Project**.
-   - Select the folder where you cloned the repository.
-
-4. Run the game:
-   - Press **F5** or click on **Play** in the editor to run the game.
+- **Godot Engine (v4.3):** Game development engine.
+- **.NET & C#:** Scripting for game mechanics.
+- **GitHub:** Version control for collaboration.
 
 ## **Project Structure**
 
-```/escape-from-nebula-prime
-├── /assets                    # Folder for game assets (images, sounds, etc.)
-├── /scenes                    # Folder for the scenes in the game
-│   ├── background.tscn        # Background scene with star particles
-│   ├── main_scene.tscn        # Main gameplay scene
-├── /scripts                   # Folder for C# scripts
-│   ├── PlayerShip.cs          # Player ship logic
-│   ├── StarBackground.cs      # Particle system for the starry sky
-├── /textures                  # Folder for texture assets
-│   ├── star_texture.png       # Circular texture for stars
+```/escape-from-nebula-prime  
+├── /assets                    # Game assets (images, sounds, etc.)  
+├── /scenes                    # Game scenes  
+│   ├── background.tscn        # Background scene with stars  
+│   ├── main_scene.tscn        # Main gameplay scene  
+├── /scripts                   # C# scripts  
+│   ├── PlayerShip.cs          # Player ship logic  
+│   ├── EnemyShip.cs           # Enemy ship logic  
+│   ├── Asteroid.cs            # Asteroid logic  
+│   ├── HUD.cs                 # HUD logic for displaying score, level, etc.  
 └── /project.godot             # Godot project file
-```
+```  
 
-## **How to Contribute**
+## **Installation Instructions**
 
-If you'd like to contribute to **Escape From Nebula Prime**, feel free to fork the project and submit a pull request. Here's how you can contribute:
+1. **Clone the repository**:  
+   ```git clone https://github.com/yourusername/escape-from-nebula-prime.git```
 
-1. Fork the repository on GitHub.
-2. Clone your fork to your local machine.
-3. Make your changes and commit them.
-4. Push your changes to your fork.
-5. Open a pull request with a description of the changes.
+2. **Install Godot Engine** from [the official website](https://godotengine.org/download).
 
-## **License**
+3. **Open the project** in Godot and press **F5** to run the game.
 
+## **How to Contribute**  
+Feel free to fork the repository and submit pull requests. Contributions are welcome!
+
+## **License**  
 This project is open-source and available under the [MIT License](LICENSE).
-
-## **Acknowledgements**
-- **Godot Engine**: For providing a powerful, flexible game engine.
-- **.NET**: For the ease of using C# in the Godot engine.
-- **Open Source Libraries and Resources**: For the assets.
-
----
-
-### **Customization Notes**
-- **Star Background**: Uses **CPUParticles2D** to simulate a starry sky. The particles are randomized in size and speed to create a realistic effect.
-- **Textures**: A simple round texture is used for the particles to simulate stars.
