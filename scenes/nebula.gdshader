@@ -42,7 +42,7 @@ float fractal_noise(vec2 uv) {
 void fragment() {
     vec2 uv = SCREEN_UV; // Normalize coordinates
     uv *= 5.0; // Scale the effect
-    uv.x += TIME * speed; // Animate along the X-axis
+    uv.x -= TIME * speed; // Animate along the X-axis
 
     // Generate fractal noise
     float n = fractal_noise(uv * turbulence);
