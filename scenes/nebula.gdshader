@@ -54,6 +54,6 @@ void fragment() {
     float alpha = smoothstep(fade_start, fade_end, dist);
 
     // Mix colors based on distance from center
-    vec4 color = vec4(0.6, 0.3, 0.8, 0.4) * n;
+    vec4 color = vec4(0.6, 0.3, 0.8, 0.6) * n;
     COLOR = color;
 }
