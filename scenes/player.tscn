@@ -1,3 +1,16 @@
-[gd_scene format=3 uid="uid://f2mvg56vdijn"]
+[gd_scene load_steps=3 format=3 uid="uid://f2mvg56vdijn"]
+
+[ext_resource type="Texture2D" uid="uid://bwk0ry4x1j7pw" path="res://assets/player_ship.png" id="1_rh0x2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c7fjf"]
 
 [node name="Player" type="Node2D"]
+position = Vector2(54, 360)
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="ShipSprite" type="Sprite2D" parent="CharacterBody2D"]
+texture = ExtResource("1_rh0x2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+shape = SubResource("RectangleShape2D_c7fjf")

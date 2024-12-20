@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://76yhs2st0jeq"]
+[gd_scene load_steps=4 format=3 uid="uid://76yhs2st0jeq"]
 
 [ext_resource type="PackedScene" uid="uid://b01incid4lk1b" path="res://scenes/background.tscn" id="1_1bld1"]
 [ext_resource type="PackedScene" uid="uid://b2mocalvrw5tw" path="res://scenes/asteroids.tscn" id="2_1bw2n"]
+[ext_resource type="PackedScene" uid="uid://f2mvg56vdijn" path="res://scenes/player.tscn" id="3_6vv4h"]
 
 [node name="Game" type="Node2D"]
 
@@ -11,3 +12,5 @@ anchor_mode = 0
 [node name="Background" parent="." instance=ExtResource("1_1bld1")]
 
 [node name="Asteroids" parent="." instance=ExtResource("2_1bw2n")]
+
+[node name="Player" parent="." instance=ExtResource("3_6vv4h")]

@@ -1,6 +1,11 @@
 [gd_scene load_steps=7 format=3 uid="uid://b01incid4lk1b"]
 
+<<<<<<< Updated upstream
 [ext_resource type="Texture2D" uid="uid://d4a635rgpj2vr" path="res://assets/star_texture.png" id="2_sygkk"]
+=======
+[ext_resource type="Shader" path="res://scenes/nebula.gdshader" id="2_reb6t"]
+[ext_resource type="Texture2D" uid="uid://dguep7w6do8sj" path="res://assets/star_texture.png" id="2_sygkk"]
+>>>>>>> Stashed changes
 
 [sub_resource type="Curve" id="Curve_etefy"]
 _data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
