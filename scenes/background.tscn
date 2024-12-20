@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://b01incid4lk1b"]
 
 [ext_resource type="Shader" path="res://scenes/nebula.gdshader" id="2_reb6t"]
-[ext_resource type="Texture2D" uid="uid://d4a635rgpj2vr" path="res://assets/star_texture.png" id="2_sygkk"]
+[ext_resource type="Texture2D" uid="uid://dguep7w6do8sj" path="res://assets/star_texture.png" id="2_sygkk"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_kvn13"]
 shader = ExtResource("2_reb6t")
