@@ -23,7 +23,7 @@ func handle_input(delta):
 
 	# Constrain the position to stay within vertical bounds
 	position.y = clamp(position.y, -300, screen_bounds.y)
-
+	
 
 func _process(delta):
 	handle_input(delta)
