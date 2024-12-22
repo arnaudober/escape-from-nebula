@@ -10,7 +10,7 @@ func _ready():
 	
 
 func handle_input(delta):
-	var velocity = Vector2.ZERO  # Start with zero movement
+	velocity = Vector2.ZERO  # Start with zero movement
 
 	# Input handling for vertical movement
 	if Input.is_action_pressed("ui_up"):  # Move up
