@@ -1,8 +1,8 @@
-# **Escape From Nebula Prime**
+# **Escape From Nebula**
 
-**Escape From Nebula Prime** is a 2D space shooter game where you control a ship that can move in all directions and shoot to defeat enemy ships. As you progress through levels, the difficulty increases with more enemies, faster ships, and new obstacles.
+**Escape From Nebula** is a 2D space shooter game where you control a ship that can move in all directions and shoot to defeat enemy ships. As you progress through levels, the difficulty increases with more enemies, faster ships, and new obstacles.
 
-<img src="https://raw.githubusercontent.com/arnaudober/escape-from-nebula-prime/refs/heads/develop/assets/boot_splash.png" alt="Game Logo" width="400"/>
+<img src="https://raw.githubusercontent.com/arnaudober/escape-from-nebula/refs/heads/develop/assets/boot_splash.png" alt="Game Logo" width="400"/>
 
 ## **Game Concept**
 - **Player Ship:** Move up, down, left, or right within constraints. Shoot to destroy enemy ships.
@@ -19,33 +19,26 @@
 - Collect boosters and reach the escape portal to advance to the next level.
 
 ## **Technologies**
-- **Godot Engine (v4.3):** Game development engine.
+- **Unity Engine:** Game development engine.
 - **.NET & C#:** Scripting for game mechanics.
 - **GitHub:** Version control for collaboration.
 
 ## **Project Structure**
 
-```/escape-from-nebula-prime  
+```/escape-from-nebula  
 ├── /assets                    # Game assets (images, sounds, etc.)  
-├── /scenes                    # Game scenes  
-│   ├── background.tscn        # Background scene with stars  
-│   ├── main_scene.tscn        # Main gameplay scene  
-├── /scripts                   # C# scripts  
-│   ├── PlayerShip.cs          # Player ship logic  
-│   ├── EnemyShip.cs           # Enemy ship logic  
-│   ├── Asteroid.cs            # Asteroid logic  
-│   ├── HUD.cs                 # HUD logic for displaying score, level, etc.  
-└── /project.godot             # Godot project file
+├── /scenes                    # Game scenes    
+└── /scripts                   # C# scripts
 ```  
 
 ## **Installation Instructions**
 
 1. **Clone the repository**:  
-   ```git clone https://github.com/yourusername/escape-from-nebula-prime.git```
+   ```git clone https://github.com/arnaudober/escape-from-nebula.git```
 
-2. **Install Godot Engine** from [the official website](https://godotengine.org/download).
+2. **Install Unity Engine** from [the official website](https://unity.com/download).
 
-3. **Open the project** in Godot and press **F5** to run the game.
+3. **Open the project** in Unity and press **Cmd+B** to run the game.
 
 ## **How to Contribute**  
 Feel free to fork the repository and submit pull requests. Contributions are welcome!
